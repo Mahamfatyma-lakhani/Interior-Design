@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="footer.css">
+    <link rel="shortcut icon" href="../images/furnirologo.png" type="image/x-icon">
+    <title>Thank You</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        @font-face {
+            font-family: Barlow-Regular;
+            font-weight: 400;
+            src: url(../Barlow/Barlow-Regular.ttf);
+        }
+
+        @font-face {
+            font-family: Barlow-SemiBold;
+            font-weight: 600;
+            src: url(../Barlow/Barlow-SemiBold.ttf);
+        }
+
+        header {
+            /* display: flex; */
+            padding-top: 30px;
+            padding-bottom: 13px;
+            padding-left: 55px;
+            padding-right: 38px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo-1 {
+            width: 20%;
+            margin-bottom: 20px;
+            padding-top: 10px;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-evenly;
+            width: 100%;
+        }
+
+        .navitems ul {
+            display: flex;
+            padding: 5px 10px;
+            margin: 0 30px;
+            justify-content: flex-end;
+            text-decoration: none;
+        }
+
+        .navbar .navitems ul li {
+            list-style-type: none;
+            padding: 10px 10px;
+            font-size: 20px;
+            text-decoration: none;
+            position: relative;
+            font-family: Barlow-SemiBold;
+            font-weight: 600;
+        }
+
+        .navitems ul li a {
+            text-decoration: none;
+            padding: 5px;
+            display: inline-block;
+            color: #333;
+            text-transform: uppercase;
+            font-family: Barlow-SemiBold;
+            font-weight: 600;
+            font-size: 20px;
+        }
+
+        .navitems ul li a:hover {
+
+            transition: all 1s ease;
+            border-bottom: 1px solid #B88E2F;
+            color: #B88E2F;
+        }
+
+        .dropdown {
+            position: absolute;
+            top: 66%;
+            left: -599px;
+            background-color: #f8f7f7;
+            min-width: 1332px;
+            padding: 22px;
+            z-index: 1;
+            display: flex;
+            right: 41px;
+            visibility: hidden;
+            margin-top: 10px;
+        }
+
+        .column {
+            width: 25%;
+            float: left;
+            box-sizing: border-box;
+            padding: 0 10px;
+        }
+
+        .column img {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+
+        .column p {
+            text-align: center;
+            font-weight: bolder;
+            font-size: 26px;
+        }
+
+        .column p:hover {
+            color: #B88E2F;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        li:hover .dropdown {
+            display: block;
+            visibility: visible;
+        }
+
+        .dropdown:hover {
+            display: block;
+        }
+
+        .icons {
+            padding: 20px;
+        }
+
+        .icons a {
+            color: black;
+            text-decoration: none;
+            padding: 20px;
+            border-radius: 50%;
+        }
+
+        .icons a:hover {
+
+            border: 1px solid #B88E2F;
+    transition: all .5s cubic-bezier(.55,.09,.68,.53);
+    background: beige;
+
+
+        }
+body{
+    overflow-x: hidden;
+    height: 100vh;
+   
+}
+        main{
+            min-height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+
+        #message {
+            text-align: center;
+            background-color: #fff;
+            color: #B88E2F;
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            font-family: Barlow-SemiBold;
+            font-weight: 600;
+            width: 50%;
+            min-height: 300px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        #message h2{
+            font-family: Barlow-SemiBold;
+            font-weight: 600;
+            font-size: 40px;
+        }
+
+        #message p{
+            font-family: Barlow-SemiBold;
+            font-weight: 600;
+            font-size: 20px;
+        }
+        
+       
+
+       
+   
+    </style>
+</head>
+
+
+<body>
+    <header>
+        <div class="container">
+            <div class="navbar">
+                <div class="logo-1"><a href="#"><img src="./images/logo.png" alt="logo"></a></div>
+                <div class="navitems">
+                    <nav>
+                        <ul>
+                            <li><a href="../index.html">Home</a></li>
+                            <li><a href="../aboutus/portfolio.html">Portfoilo</a></li>
+                            <li class="gift">
+                                <a href="../blog/blog.html">Blog</a>
+                                <div class="dropdown">
+
+                                    <div class="column">
+                                        <a href="https://havenly.com/blog/floor-plan-mistakes" target="_blank"><img
+                                                src="./images/article1.jpg" alt="Article 1"></a>
+                                        <p>Article 01</p>
+                                    </div>
+                                    <div class="column">
+                                        <a href="https://havenly.com/blog/modern-cottage" target="_blank"><img
+                                                src="./images/gifts-under-100.webp" alt="Article 2"></a>
+                                        <p>Article 02</p>
+                                    </div>
+                                    <div class="column">
+                                        <a href="https://havenly.com/blog/colors-that-go-with-gray" target="_blank"><img
+                                                src="./images/article3.jpeg" alt="Article 3"></a>
+                                        <p>Article 03</p>
+                                    </div>
+                                    <div class="column">
+                                        <a href="https://havenly.com/blog/interior-design-mistakes" target="_blank"><img
+                                                src="./images/article4.jpg" alt="Article 4"></a>
+                                        <p>Article 04</p>
+                                    </div>
+                                </div>
+
+                            </li>
+                            <li><a href="../aboutus/aboutus.html">About</a></li>
+                            <li><a href="../contact/contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="icons">
+                    <a href="#"><i class="fa-regular fa-heart"></i></a>
+                    <a href="#"><i class="fa-solid fa-bell"></i></a>
+                    <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                    <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div id="message">
+            <h2>Thank You!</h2>
+            <p>Your form has been successfully submitted.</p>
+        </div>
+    </main>
+
+    <footer class="footersection">
+        <div class="container">
+            <div class="footer-row">
+                <div class="footer-col1">
+                    <a href="../index.html"><img src="./images/logo.png" class="logo-footer" alt="logo"></a>
+                    <p>We are one of the leading interior design and remodeling studios available for all of your
+                        residential and commercial interior design needs.</p>
+                </div>
+                <div class="footer-col2">
+                    <h3>Office</h3>
+                    <p>Shahrah e faisal Road</p>
+                    <p>P.E.C.H.S block#6</p>
+                    <p>Karachi,Pakistan</p>
+                    <p class="email-id"><a
+                            href="mailto:Furnirointeriordesign@gmail.com">Furnirointeriordesign@gmail.com</a></p>
+                    <h4> <a href="tel:1111111111">+92-1111111111</a></h4>
+
+                </div>
+                <div class="footer-col3">
+                    <h3>Links</h3>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../aboutus/aboutus.html">About Us</a></li>
+                        <li><a href="../aboutus/portfolio.html">Portfoilo</a></li>
+                        <li><a href="../blog/blog.html">Blog</a></li>
+                        <li><a href="../contact/contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col4">
+                    <h3>Newsletter</h3>
+                    <form id="footer-form">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="email" placeholder="Enter your email id">
+                        <button type="submit"><i class="fa-solid fa-arrow-right"></i></button>
+                    </form>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/i/flow/login" target="_blank"><i
+                                class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.pinterest.com/" target="_blank"><i class="fa-brands fa-pinterest"></i></a>
+                    </div>
+
+                </div>
+                <div class="bottom-bar">
+                    <a href="../index.html" target="_blank">
+                        <p>&copy; 2023 Furniro . All rights reserved</p>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

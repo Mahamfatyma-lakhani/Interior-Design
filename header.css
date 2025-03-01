@@ -1,0 +1,128 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: Barlow-Regular;
+    font-weight: 400;
+    src: url(../Barlow/Barlow-Regular.ttf);
+}
+@font-face {
+    font-family: Barlow-SemiBold;
+    font-weight: 600;
+    src: url(../Barlow/Barlow-SemiBold.ttf);
+}
+header{
+    
+    padding-top: 23px;
+    padding-bottom: 13px;
+    padding-left: 23px;
+    padding-right: 17px;
+}
+.logo-1 {
+    width: 20%;
+    margin-bottom: 20px;
+    padding-top: 10px;
+  }
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.navitems ul{
+    display: flex;   
+    padding: 5px 10px;
+    margin: 0 30px;
+    justify-content: flex-end;
+    text-decoration: none;
+}
+
+.navbar .navitems ul li{
+    list-style-type: none;
+    padding: 10px 10px;
+    font-size: 20px;
+    text-decoration: none;
+    position: relative;
+    font-family: Barlow-SemiBold;
+    font-weight: 600;
+}
+
+ .navitems ul li a{
+    text-decoration: none;
+    padding: 5px;
+    display: inline-block;
+    color: #333;
+    text-transform: uppercase;
+}
+
+.navitems ul li a:hover{
+    
+    transition: all 1s ease;
+    border-bottom: 1px solid #B88E2F;
+    color: #B88E2F;
+}  
+.dropdown {
+    position: absolute;
+  top: 66%;
+  left: -599px;
+  background-color: #f8f7f7;
+  min-width: 1332px;
+  padding: 22px;
+  z-index: 1;
+  display: flex;
+  right: 41px;
+  visibility: hidden;
+  margin-top: 10px;
+}
+
+.column {
+    width: 25%;
+    float: left;
+    box-sizing: border-box;
+    padding: 0 10px;
+}
+
+.column img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.column p{
+    text-align: center;
+  font-weight: bolder;
+  font-size: 26px;
+}
+.column p:hover{
+    color: #B88E2F;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+li:hover .dropdown {
+    display: block;
+    visibility: visible;
+}
+.dropdown:hover{
+    display: block;
+}
+.icons{
+    padding: 20px;
+}
+.icons a{
+    color: black;
+    text-decoration: none;
+    padding: 14px;
+    border-radius: 50%;
+
+}
+.icons a:hover{
+  
+    border: 1px solid #B88E2F;
+   
+    transition: all .5s cubic-bezier(.55,.09,.68,.53);
+    background: beige;
+}
